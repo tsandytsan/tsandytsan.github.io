@@ -1,0 +1,33 @@
+#header {
+    background-color:#FC9D9A;
+    color:white;
+    text-align:center;
+    padding:5px;
+
+}
+#col {
+  background-color:#F9CDAD;
+  height:auto;
+  width:auto;
+  float:left;
+  padding:20px;
+}
+#section {
+  background-color: #C8C8A9;
+  width:730px;
+  height:420px;
+  float:left;
+  padding:20px;
+}
+
+#section2 {
+  background-color: #83AF9B;
+  width:278px;
+  height:420px;
+  float:right;
+  padding: 20px;
+}
+
+body {
+  background-image: url("pattern.png");
+}
