@@ -1,0 +1,13 @@
+body {
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image: url(..//ep_naturalwhite.png);
+}
+
+.type {
+  font-weight: 500;
+}
+
+.vl {
+    border-left: 1px solid #242424;
+    height: 50px
+}
