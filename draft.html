@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <title>Sandy Tsan's Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <div class="navbar-fixed">
+      <nav class="transparent" role="navigation" style=color:#424242;>
+        <div class="nav-wrapper container" style=color:#424242;>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+
+    <!-- Introduction slide -->
+    <div id="home" class="section scrollspy">
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <h1 class= "header grey-text text-darken-3"><strong>I am </strong><span class= "type"></span></h1>
+        <script type="text/javascript" src="js/typed.min.js"></script>
+        <script type="text/javascript">
+          var typed = new Typed(".type", {
+            strings: ["^1000a learner.",
+            "a teacher.",
+            "a programmer.",
+            "a designer.",
+            "a leader.",
+            "Sandy Tsan.^10000"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            cursorChar: '_',
+            loop: true
+          });
+        </script>
+        <div class="row">
+          <div class="col s1 offset-s1" style="width: 0%;"><div class="vl"></div></div>
+          <div class="col s9"><p><i>Hello! My name is Sandy Tsan and I am a third year student at UC Riverside, currently pursuing a B.S. in Computer Science. I've been dabbling in lots of spaces such as graphic design, teaching Computer Science, making web applications, and more; it's safe to say that I'm very versatile in the field of arts and technology. My overall passion lies in creating content that I love, whether it is a banner for an event or a web application from a hackathon. Thank you for stopping by and I hope to get in contact with you soon!</i></p></div>
+          <div class="col s1"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills slide -->
+    <div id="skills" class="section scrollspy">
+      <div class="container">
+        <h1 class= "header grey-text text-darken-3"><strong>Skills</strong></h1>
+        <div class="row">
+          <div class="col s1 offset-s1" style="width: 0%;"><div class="vl"></div></div>
+          <div class="col s10"><p><i>A third year student at UC Riverside, currently pursuing a B.S. in Computer Science</i></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exp slide -->
+    <div id="experience" class="section scrollspy">
+      <div class="container">
+        <h1 class= "header grey-text text-darken-3"><strong>Experience</strong></h1>
+        <div class="row">
+          <div class="col s10"><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div><div class="col s2" style="width: 0%;"><div class="vl"></div></div>
+          <div class="col s10"><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+          <div class="col s10"><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+          <div class="col s10"><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact slide -->
+    <div id="contact" class="section scrollspy">
+      <div class="container">
+        <div class="row">
+          <div class="col s12"><p><i>LinkedIn Graphics Resume</i></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts on the bottom for optimal load time-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src ="js/script.js"></script>
+    <script src="js/typed.min.js"></script>
+  </body>
+</html>
