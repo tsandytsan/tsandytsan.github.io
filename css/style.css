@@ -1,13 +1,61 @@
 body {
   /* Background pattern from Toptal Subtle Patterns */
   background-image: url(..//ep_naturalwhite.png);
+  color: #424242;
 }
 
-.type {
-  font-weight: 500;
+.dark {
+  background-image: url(..//ep_naturalblack.png);
+  color: #b2b2b2;
 }
 
-.vl {
-    border-left: 1px solid #242424;
-    height: 50px
+body.dark .icon_list img {
+  filter: contrast(0);
+}
+
+.body_box {
+  /* border: 1px solid #242424; */
+  height: 100%;
+  width: 30%;
+  margin: auto;
+  margin-top: 15%;
+  /* REMOVE THIS LATER WHEN DONE :) */
+  /* border: 1px solid #242424; */
+}
+
+.splash_box {
+  /* REMOVE THIS LATER WHEN DONE :) */
+  /* border: 1px solid #242424; */
+}
+
+.typing {
+  font-weight: 600;
+}
+
+.fullname {
+  font-size: 70px;
+  padding-bottom: 2%;
+}
+
+.splash_about_body {
+  /* vertical border */
+  border-left: 1px solid #424242;;
+}
+
+
+.footer_body {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 1500px) {
+  .body_box {
+    width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .body_box {
+    width:90%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }

@@ -1,49 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Import bootstrap.css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
-    <title>Sandy Tsan's Portfolio</title>
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+    <title>Sandy Tsan</title>
   </head>
 
-  <body>
-    <!-- Introduction slide -->
-    <div class="container">
-      <br>
-      <br>
-      <br>
-      <h1 class= "header grey-text text-darken-3"><strong>I am </strong><span class= "type"></span></h1>
-      <script type="text/javascript" src="js/typed.min.js"></script>
-      <script type="text/javascript">
-        var typed = new Typed(".type", {
-          strings: ["^1000a learner.",
-          "a teacher.",
-          "a programmer.",
-          "a designer.",
-          "a leader.",
-          "a supporter.",
-          "Sandy Tsan.^10000"],
-          typeSpeed: 50,
-          backSpeed: 50,
-          cursorChar: '_',
-          loop: true
-        });
-      </script>
-      <div class="row">
-        <div class="col s1 offset-s1" style="width: 0%;"><div class="vl" style="height: 170px;"></div></div>
-        <div class="col s9"><p><i>Hello! My name is Sandy Tsan and I am a recent alumni at UC Riverside with a Bachelors' in Computer Science. I've been dabbling in lots of spaces such as graphic design, teaching Computer Science, making web applications, and more. My overall passion lies in creating content that reaches everyone, whether it is a banner for an event or a web application from a hackathon. Thank you for stopping by and I hope to get in contact with you soon! </i></p></div>
-        <div class="col s11 offset-s1"><a class="waves-effect btn-flat" href="https://www.linkedin.com/in/tsandytsan/">LinkedIn</a><a class="waves-effect btn-flat" href="https://www.github.com/tsandytsan/">GitHub</a><a class="waves-effect btn-flat" href="https://drive.google.com/open?id=1MiN7pPM0m2VrLgYGZaOjYBNwPqrirR7P">Graphics Drive</a>
+  <body id = "body">
+    <div class = "body_box">
+      <div class = "splash_box" style = "margin-bottom:40%;">
+        <div class = "splash_main_text">
+          <span class = "typing">I am <span class= "type"></span></span>
+          <script type="text/javascript" src="js/typed.min.js"></script>
+          <script type="text/javascript">
+            var typed = new Typed(".type", {
+              strings: ["^1000a learner.",
+              "a teacher.",
+              "a programmer.",
+              "a designer.",
+              "a leader.",
+              "a supporter.",
+              "^10000"],
+              typeSpeed: 50,
+              backSpeed: 50,
+              cursorChar: '_',
+              loop: true
+            });
+          </script>
+          <h1 class = "fullname">Sandy Tsan</h1>
+        </div>
+        <div class = "splash_about_box">
+          <div class = "splash_about_body">
+            <p style = "margin-left: 3%; padding-bottom: 1%"><i>Hello! My name is Sandy Tsan and I am a recent alumni at UC Riverside with a Bachelors' in Computer Science. I've been dabbling in lots of spaces such as graphic design, teaching Computer Science, making web applications, and more. My overall passion lies in creating content that reaches everyone, whether it is a banner for an event or a web application from a hackathon. Thank you for stopping by and I hope to get in contact with you soon!</i></p>
+            <!-- Github icon made by Swifticons
+            Linkedin, Sun, Moon icons made by Freepik
+            Email icons made by iconixar
+
+            All are found on flaticon.com -->
+            <div class = "icon_list">
+              <a href="https://github.com/tsandytsan"><img src="github.svg" alt="GitHub" width="30px" height="30px" style = "margin-left: 3%;"></a>
+              <a href="https://www.linkedin.com/in/tsandytsan/"><img src="linkedin.svg" alt="LinkedIn" width="30px" height="30px" style = "margin-left: 5%;"></a>
+              <a href="mailto:tsandytsan@gmail.com"><img src="email.svg" alt="Email" width="30px" height="30px" style = "margin-left: 5%;"></a>
+              <img src="moon.svg" id="ui" alt="Dark Mode Toggle" width="30px" height="30px" style = "margin-left: 5%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class = "splash_box" style = "margin-top: 50%;">
+        <div class = "splash_about_box">
+          <img src="ST.png">
+
+        </div>
+      </div> -->
+
+    <!-- rename to contact_box -->
+      <div class = "splash_box">
+        <div class = "footer_body">
+          <p>Want to say hi? Send me an <a href="mailto:tsandytsan@gmail.com">email!</a></p>
+        </div>
       </div>
     </div>
+
     <!-- Scripts on the bottom for optimal load time-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src ="js/script.js"></script>
     <script src="js/typed.min.js"></script>
   </body>
