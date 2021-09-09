@@ -23,10 +23,17 @@ mode_toggle.addEventListener("click",()=>{
 
 function darkMode(){
   document.body.classList.add("dark")
-  mode_toggle.setAttribute("src","sun.svg")
+  var sunmoon = document.querySelector("#ui")
+  sunmoon.setAttribute("src","sun.svg")
 }
 
 function lightMode(){
   document.body.classList.remove("dark")
-  mode_toggle.setAttribute("src","moon.svg")
+  var sunmoon = document.querySelector("#ui")
+  sunmoon.setAttribute("src","moon.svg")
 }
+
+// enable the mobile side navigation
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});

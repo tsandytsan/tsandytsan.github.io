@@ -4,16 +4,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import bootstrap.css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
     <title>Sandy Tsan</title>
   </head>
 
   <body id = "body">
-    <div class = "body_box">
-      <div class = "splash_box" style = "margin-bottom:40%;">
+    <!-- Navigation bar  -->
+    <div class="navbar-fixed">
+      <nav class = "brown lighten-5">
+        <div class="nav-wrapper">
+          <div class="brand-logo" style="padding-left:10px;"><a href="#home"><img src="img/favicon.png" href="#home" alt="" width="30" height="30"></a></div>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style = "color: #424242">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <strong><li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#designs">Designs</a></li>
+            <li><a href="#contact">Contact</a></li></strong>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav brown lighten-5" id="mobile-demo">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#designs">Designs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class = "container">
+      <!-- Splash box -->
+      <div class = "splash_box" id = "home">
         <div class = "splash_main_text">
           <span class = "typing">I am <span class= "type"></span></span>
           <script type="text/javascript" src="js/typed.min.js"></script>
@@ -32,44 +55,230 @@
               loop: true
             });
           </script>
-          <h1 class = "fullname">Sandy Tsan</h1>
+          <h1 class = "fullname"><strong>Sandy Tsan</strong></h1>
         </div>
         <div class = "splash_about_box">
-          <div class = "splash_about_body">
-            <p style = "margin-left: 3%; padding-bottom: 1%"><i>Hello! My name is Sandy Tsan and I am a recent alumni at UC Riverside with a Bachelors' in Computer Science. I've been dabbling in lots of spaces such as graphic design, teaching Computer Science, making web applications, and more. My overall passion lies in creating content that reaches everyone, whether it is a banner for an event or a web application from a hackathon. Thank you for stopping by and I hope to get in contact with you soon!</i></p>
+          <div class = "splash_about_body" style = "padding-left: 3%;">
+            <p style = "padding-bottom: 1%"><i>Hello! My name is Sandy Tsan and I am a recent alumni at UC Riverside with a Bachelors' in Computer Science. I've been dabbling in lots of spaces such as graphic design, teaching Computer Science, making web applications, and more. My overall passion lies in creating content that reaches everyone, whether it is a banner for an event or a web application from a hackathon. Thank you for stopping by and I hope to get in contact with you soon!</i></p>
             <!-- Github icon made by Swifticons
             Linkedin, Sun, Moon icons made by Freepik
             Email icons made by iconixar
 
             All are found on flaticon.com -->
             <div class = "icon_list">
-              <a href="https://github.com/tsandytsan"><img src="github.svg" alt="GitHub" width="30px" height="30px" style = "margin-left: 3%;"></a>
-              <a href="https://www.linkedin.com/in/tsandytsan/"><img src="linkedin.svg" alt="LinkedIn" width="30px" height="30px" style = "margin-left: 5%;"></a>
-              <a href="mailto:tsandytsan@gmail.com"><img src="email.svg" alt="Email" width="30px" height="30px" style = "margin-left: 5%;"></a>
-              <img src="moon.svg" id="ui" alt="Dark Mode Toggle" width="30px" height="30px" style = "margin-left: 5%;">
+              <a class="waves-effect waves-light btn-flat" href="https://github.com/tsandytsan" style = "padding: 3px 3px 0px 3px; margin-right: 3%;"><img src="img/github.svg" alt="GitHub" width="30px" height="30px"></a>
+              <a class="waves-effect waves-light btn-flat" href="https://www.linkedin.com/in/tsandytsan/" style = "padding: 3px 7px 0px 3px; margin-right: 3%;"><img src="img/linkedin.svg" alt="LinkedIn" width="30px" height="30px" style = "margin-left: 5%;"></a>
+              <a class="waves-effect waves-light btn-flat" href="mailto:tsandytsan@gmail.com" style = "padding: 3px 3px 0px 5px; margin-right: 3%;"><img src="img/email.svg" alt="Email" width="30px" height="30px"></a>
+              <a class="waves-effect waves-light btn-flat" id="ui" style = "padding: 3px 3px 0px 5px;"><img src="img/lightdark.svg" id="ui" alt="Dark Mode Toggle" width="30px" height="30px"></a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- <div class = "splash_box" style = "margin-top: 50%;">
-        <div class = "splash_about_box">
-          <img src="ST.png">
+      <!-- TODO: About Me -->
+      <div class="section" id = "about">
+        <div class = "row">
+          <div class = "col s12">
+              <h3 class = "fullname" style = "padding-top: 10%"><strong>About Me</strong></h3>
+          </div>
+
+          <!-- <div class="col s12 m12 l6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="testing4.gif" alt = "">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content" style = "position:absolute;width:100%;overflow-y:auto;height:85%;">
+                  <p>I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action" style = "position: absolute;bottom:0;border-top:0;background-color:#fafafa">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col s12 m12 l6">
+            <div class="card horizontal">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. </p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+              <div class="card-image">
+                <img src="testing4.gif" alt = "">
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <div class="col s12 m4 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="testing4.gif" alt = "">
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m8 l9">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Card Title</span>
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- TODO: Featured Projects -->
+      <div class="section" id = "projects">
+        <div class = "row">
+          <div class="col s12">
+            <h3 class = "fullname" style = "padding-top: 10%"><strong>Featured Projects</strong></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Designs -->
+      <div class="section" id = "designs">
+        <div class="row">
+          <div class="col s12">
+            <h3 class = "fullname" style = "padding-top: 10%"><strong>Featured Designs</strong></h3>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator materialboxed" src="img/featdesigns/CKIWebsite.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><strong>Website for CKI@UCR</strong><i class="material-icons right">more_vert</i></span>
+                <p><a href="http://resources.cnhcirclek.org/Documents/Tech/Screenshots.pdf">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><strong>Website for CKI@UCR</strong><i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card ">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator materialboxed" src="img/featdesigns/Webtech.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><strong>CKI Technology Committee</strong><i class="material-icons right">more_vert</i></span>
+                <p><a href="https://drive.google.com/drive/folders/181c2K8P7-vG8zOj0qx4KyQavwGczGZK7?usp=sharing/">This is a link</a></p>
+              </div>
+              <div class="card-reveal ">
+                <span class="card-title grey-text text-darken-4"><strong>CKI Technology Committee</strong><i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card ">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator materialboxed" src="img/featdesigns/ClubWebsiteManual.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><strong>CKI Website Manual</strong><i class="material-icons right">more_vert</i></span>
+                <p><a href="https://issuu.com/cnhcirclek/docs/techresourcemanual">This is a link</a></p>
+              </div>
+              <div class="card-reveal ">
+                <span class="card-title grey-text text-darken-4"><strong>CKI Website Manual</strong><i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card ">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator materialboxed" src="img/featdesigns/CitrusHack2020.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><strong>Citrus Hack 2020</strong><i class="material-icons right">more_vert</i></span>
+                <p><a href="https://drive.google.com/drive/folders/1MLE99hlZQMgzK7RRUEI76kPYO377-otN?usp=sharing/">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><strong>Citrus Hack 2020</strong><i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card ">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator materialboxed" src="img/featdesigns/CutieHack2018.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><strong>Cutie Hack 2018</strong><i class="material-icons right">more_vert</i></span>
+                <p><a href="https://drive.google.com/drive/folders/1BQVUdRjYPfBjGxIhGDvRtBDohEoFjz4r?usp=sharing">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><strong>Cutie Hack 2018</strong><i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card ">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator materialboxed" src="img/featdesigns/CutieHack2019.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><strong>Cutie Hack 2019</strong><i class="material-icons right">more_vert</i></span>
+                <p><a href="https://drive.google.com/drive/folders/1XtaRaAIzBSCuzvJMVKFSKKoyPxI2xnsC?usp=sharing/">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><strong>Cutie Hack 2019</strong><i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card ">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator materialboxed" src="img/featdesigns/FTCLogo.gif">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><strong>Fall Training Conference 2018</strong><i class="material-icons right">more_vert</i></span>
+                <p><a href="https://drive.google.com/drive/folders/1V6-hiW7l1h16BDhEBoDgYACbTf62fCeT?usp=sharing">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><strong>Fall Training Conference 2017</strong><i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on. </p>
+              </div>
+            </div>
+          </div>
 
         </div>
-      </div> -->
+      </div>
+    </div>
 
-    <!-- rename to contact_box -->
-      <div class = "splash_box">
-        <div class = "footer_body">
-          <p>Want to say hi? Send me an <a href="mailto:tsandytsan@gmail.com">email!</a></p>
-        </div>
+    <!-- Contact  -->
+    <div class = "contact_box body_box">
+      <div class = "footer_body">
+        <p>Want to say hi? Send me an <a href="mailto:tsandytsan@gmail.com">email!</a></p>
       </div>
     </div>
 
     <!-- Scripts on the bottom for optimal load time-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src ="js/script.js"></script>
     <script src="js/typed.min.js"></script>
   </body>

@@ -18,7 +18,7 @@ body.dark .icon_list img {
   height: 100%;
   width: 30%;
   margin: auto;
-  margin-top: 15%;
+  /* margin-top: 15%; */
   /* REMOVE THIS LATER WHEN DONE :) */
   /* border: 1px solid #242424; */
 }
@@ -26,6 +26,8 @@ body.dark .icon_list img {
 .splash_box {
   /* REMOVE THIS LATER WHEN DONE :) */
   /* border: 1px solid #242424; */
+  padding-bottom: 40%;
+  padding-top: 30%;
 }
 
 .typing {
@@ -33,8 +35,7 @@ body.dark .icon_list img {
 }
 
 .fullname {
-  font-size: 70px;
-  padding-bottom: 2%;
+  margin-top: 0;
 }
 
 .splash_about_body {
@@ -47,6 +48,12 @@ body.dark .icon_list img {
   text-align: center;
 }
 
+.card {
+  border: none;
+  color: #424242;
+  /* -webkit-box-shadow: none;
+  box-shadow: none; */
+}
 
 @media screen and (max-width: 1500px) {
   .body_box {
