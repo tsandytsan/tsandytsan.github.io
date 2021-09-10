@@ -6,7 +6,7 @@ body {
 
 .dark {
   background-image: url(..//ep_naturalblack.png);
-  color: #b2b2b2;
+  color: #fafafa;
 }
 
 body.dark .icon_list img {
@@ -53,6 +53,16 @@ body.dark .icon_list img {
   color: #424242;
   /* -webkit-box-shadow: none;
   box-shadow: none; */
+}
+
+a{
+  color: #4c7f80;
+  -webkit-transition:color .3s ease;
+  transition:color .3s ease;
+}
+
+a:hover{
+  color: #90c7ad;
 }
 
 @media screen and (max-width: 1500px) {
