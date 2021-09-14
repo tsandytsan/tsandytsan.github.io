@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Import scrollreveal.js -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
     <title>Sandy Tsan</title>
@@ -21,8 +23,8 @@
           <ul class="right hide-on-med-and-down">
             <strong><li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#designs">Designs</a></li>
-            <li><a href="#contact">Contact</a></li></strong>
+            <li><a href="#designs">Designs</a></li></strong>
+            <!-- <li><a href="#contact">Contact</a></li></strong> -->
           </ul>
         </div>
       </nav>
@@ -31,7 +33,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#designs">Designs</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <!-- <li><a href="#contact">Contact</a></li> -->
     </ul>
 
     <!--
@@ -56,23 +58,17 @@
     -->
 
 
-
-
-
-
-
-
-
     <div class = "container">
       <!-- Splash box -->
       <div class = "splash_box" id = "home">
         <div class = "splash_main_text">
-          <span class = "typing">I am <span class= "type"></span></span>
+          <div class = "typing_div"><span class = "typing">I am <span class= "type"></span></span></div>
           <script type="text/javascript" src="js/typed.min.js"></script>
           <script type="text/javascript">
             var typed = new Typed(".type", {
-              strings: ["^1000a learner.",
-              "a teacher.",
+              strings: ["",
+              "^3000a learner.",
+              "a educator.",
               "a programmer.",
               "a designer.",
               "a leader.",
@@ -84,7 +80,7 @@
               loop: true
             });
           </script>
-          <h1 class = "fullname"><strong>Sandy Tsan</strong></h1>
+          <div class = "full_name"><h1 class = "fullname"><strong>Sandy Tsan</strong></h1></div>
         </div>
         <div class = "splash_about_box">
           <div class = "splash_about_body" style = "padding-left: 3%;">
@@ -105,11 +101,11 @@
       </div>
 
       <!-- TODO: About Me -->
-      <div class="section" id = "about">
+      <div class="section yes0" id = "about">
         <div class = "row">
           <div class = "col s12">
             <h3 class = "fullname" style = "padding-top: 10%"><strong>About Me</strong></h3>
-            <div class="card horizontal">
+            <div class="card yes1 horizontal">
               <div class="card-image">
                 <img src="testing4.gif" alt = "">
               </div>
@@ -127,67 +123,65 @@
       </div>
 
       <!-- TODO: Featured Projects -->
-      <div class="section" id = "projects">
-        <div class = "row">
-          <div class="col s12">
-            <h3 class = "fullname" style = "padding-top: 10%"><strong>Featured Projects</strong></h3>
-          </div>
+      <div class="section yes2" id = "projects">
+          <div class = "row">
+            <div class="col s12">
+              <h3 class = "fullname" style = "padding-top: 10%"><strong>Featured Projects</strong></h3>
+            </div>
 
-          <div class="col s12">
-            <div class="card horizontal sticky-action">
-              <div class="card-stacked">
-                <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
-                  <span class="card-title grey-text text-darken-4">Terminalgram</span>
-                  <p><i>Made with: Hadoop DFS, PostgreSQL, Java</i></p><br>
-                  <p>The senior design project in which I worked with 2 others in mocking an Instagram database with a terminal GUI. PostgreSQL was used for the user functionalities and Hadoop was used to mock the image sharing, storage, and user credentials.</p> </br>
-                  <p>The project is an Instagram like application with a terminal-style menu to navigate the app. The system allows users to add a post, follow other users, view other posts from people they follow and view a news feed of the top photos based on the people they follow. Searches can be made to view users based on their username and tags. Users can also search photos based on tags and users. There is also an option to list the most popular photos and users in the application. </p>
+            <div class="col s12">
+              <div class="card horizontal sticky-action">
+                <div class="card-stacked">
+                  <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
+                    <span class="card-title grey-text text-darken-4">Terminalgram</span>
+                    <p><i>Made with: Hadoop DFS, PostgreSQL, Java</i></p><br>
+                    <p>An Instagram like application with a terminal-style menu to navigate the app. The system allows users to add a post, follow other users, view other posts from people they follow and view a news feed of the top photos based on the people they follow. Searches can be made to view users based on their username and tags. Users can also search photos based on tags and users. There is also an option to list the most popular photos and users in the application. </p>
+                  </div>
+                  <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
+                    <a href="https://github.com/hazewin/F20-CS179G">GitHub</a>
+                  </div>
                 </div>
-                <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
-                  <a href="https://github.com/hazewin/F20-CS179G">GitHub</a>
-                </div>
-              </div>
-              <div class="card-image">
-                <img src="img/featdesigns/terminalgram.gif" alt = "">
-              </div>
-            </div>
-            <div class="card horizontal">
-              <div class="card-image">
-                <img src="img/featdesigns/petsimulator.gif" alt = "">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
-                  <span class="card-title grey-text text-darken-4">Pet Simulator</span>
-                  <p><i>Made with: Arduino UNO R3, C for ATmega1284</i></p><br>
-                  <p>This was my individual project for my Introduction to Embedded Systems class. It utilizes both the Atmega1284 chip and Arduino UNO R3 to program a pet simulator game, taking inspirations from Bandai's Tamagotchi of the late 1990s. Other implementations include the Adafruit Feather JoyWing, LCD Screen, LED Bar, shift registers, USART, and EEPROM. </p> </br>
-                  <p>Pet Simulator is an interactive game where your goal is to take care of your pet. In this game, you can feed, play, and wash your virtual friend in order to maintain its health bar. If you're feeling malicious, there is also an option to kick your pet and decrease the health bar. </p>
-                </div>
-                <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
-                  <a href="https://www.youtube.com/watch?v=RSMGsYVGWGM">Demo Video</a>
+                <div class="card-image">
+                  <img src="img/featdesigns/terminalgram.gif" alt = "">
                 </div>
               </div>
-            </div>
-            <div class="card horizontal">
-              <div class="card-stacked">
-                <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
-                  <span class="card-title grey-text text-darken-4">guideme</span>
-                  <p><i>Made with: Google App Engine, HTML, CSS, JavaScript, Python, Yelp API </i></p><br>
-                  <p> guideme is a collaboration with two others to create a web app which planned a full three-day trip for travelers. </p>
+              <div class="card horizontal">
+                <div class="card-image">
+                  <img src="img/featdesigns/petsimulator.gif" alt = "">
                 </div>
-                <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
-                  <a href="https://github.com/geocas38/csgangstas">GitHub</a>
+                <div class="card-stacked">
+                  <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
+                    <span class="card-title grey-text text-darken-4">Pet Simulator</span>
+                    <p><i>Made with: Arduino UNO R3, C for ATmega1284</i></p><br>
+                    <p>Pet Simulator is an interactive game where the main goal is to take care of your pet, taking inspirations from Bandai's Tamagotchi of the late 1990s. In this game, players can feed, play, and wash your virtual friend in order to maintain its health bar. ________, there is also an option to kick the pet in order to decrease the health bar. </p>
+                  </div>
+                  <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
+                    <a href="https://www.youtube.com/watch?v=RSMGsYVGWGM">Demo Video</a>
+                  </div>
                 </div>
               </div>
-              <div class="card-image">
-                <img src="img/featdesigns/guideme.gif" alt = "">
+              <div class="card horizontal">
+                <div class="card-stacked">
+                  <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
+                    <span class="card-title grey-text text-darken-4">guideme</span>
+                    <p><i>Made with: Google App Engine, HTML, CSS, JavaScript, Python, Yelp API </i></p><br>
+                    <p> This project was made during. </p>
+                    <p> guideme is a collaboration with two others to create a web app which planned a full three-day trip for travelers. </p>
+                  </div>
+                  <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
+                    <a href="https://github.com/geocas38/csgangstas">GitHub</a>
+                  </div>
+                </div>
+                <div class="card-image">
+                  <img src="img/featdesigns/guideme.gif" alt = "">
+                </div>
               </div>
             </div>
           </div>
-
-        </div>
       </div>
 
       <!-- Featured Designs -->
-      <div class="section" id = "designs">
+      <div class="section yes2" id = "designs">
         <div class="row">
           <div class="col s12">
             <h3 class = "fullname" style = "padding-top: 10%"><strong>Featured Designs</strong></h3>
@@ -323,10 +317,8 @@
 
         </div>
       </div>
-    </div>
 
-    <!-- Contact  -->
-    <div class = "contact_box body_box">
+      <!-- Contact  -->
       <div class = "footer_body">
         <p>Want to say hi? Send me an <a style = "text-transform:none;" href="mailto:tsandytsan@gmail.com">email!</a></p>
       </div>

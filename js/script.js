@@ -33,6 +33,19 @@ function lightMode(){
   sunmoon.setAttribute("src","moon.svg")
 }
 
+ScrollReveal().reveal('.typing_div')
+ScrollReveal().reveal('.full_name', { delay: 1000 })
+ScrollReveal().reveal('.splash_about_box', { delay: 1500 })
+
+ScrollReveal().reveal('.reveal', { delay: 300 })
+ScrollReveal().reveal('.yes1', { delay: 300 })
+ScrollReveal().reveal('.yes2', { delay: 300 })
+ScrollReveal().reveal('.yes3', { delay: 300 })
+ScrollReveal().reveal('.yes', { delay: 300 })
+ScrollReveal().reveal('.yes1', { delay: 300 })
+ScrollReveal().reveal('.yes2', { delay: 300 })
+ScrollReveal().reveal('.yes3', { delay: 300 })
+
 // enable the mobile side navigation
 $(document).ready(function(){
   $('.sidenav').sidenav();

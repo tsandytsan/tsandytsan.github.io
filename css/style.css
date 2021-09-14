@@ -13,16 +13,6 @@ body.dark .icon_list img {
   filter: contrast(0);
 }
 
-.body_box {
-  /* border: 1px solid #242424; */
-  height: 100%;
-  width: 30%;
-  margin: auto;
-  /* margin-top: 15%; */
-  /* REMOVE THIS LATER WHEN DONE :) */
-  /* border: 1px solid #242424; */
-}
-
 .splash_box {
   /* REMOVE THIS LATER WHEN DONE :) */
   /* border: 1px solid #242424; */
