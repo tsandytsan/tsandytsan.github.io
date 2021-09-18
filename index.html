@@ -18,7 +18,7 @@
     <div class="navbar-fixed">
       <nav class = "brown lighten-5">
         <div class="nav-wrapper">
-          <div class="brand-logo" style="padding-left:10px;"><a href="#home"><img src="img/favicon.png" href="#home" alt="" width="30" height="30"></a></div>
+          <div class="brand-logo" style="padding-left:10px;"><a href="#home"><img src="img/favicon.png" href="#home" alt="favicon" width="30" height="30"></a></div>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style = "color: #424242">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <strong><li><a href="#about">About</a></li>
@@ -67,7 +67,7 @@
           <script type="text/javascript">
             var typed = new Typed(".type", {
               strings: ["",
-              "^3000a learner.",
+              "^1000a learner.",
               "a educator.",
               "a programmer.",
               "a designer.",
@@ -84,7 +84,9 @@
         </div>
         <div class = "splash_about_box">
           <div class = "splash_about_body" style = "padding-left: 3%;">
-            <p style = "padding-bottom: 1%"><i>Hello! My name is Sandy Tsan and I am a recent alumni at UC Riverside with a Bachelors' in Computer Science. I've been dabbling in lots of spaces such as graphic design, teaching Computer Science, making web applications, and more. My overall passion lies in creating content that reaches everyone, whether it is a banner for an event or a web application from a hackathon. Thank you for stopping by and I hope to get in contact with you soon!</i></p>
+            <p style = "padding-bottom: 1%"><i>I am a recent alumni at UC Riverside with a Bachelors' in Computer Science. I've been dabbling in lots of spaces such as graphic design, teaching Computer Science, making web applications, and more. My overall passion lies in creating content that reaches everyone, whether it is a banner for an event or an online planner for travelers. Thank you for stopping by and I hope to get in contact with you soon!</i></p>
+
+
             <!-- Github icon made by Swifticons
             Linkedin, Sun, Moon icons made by Freepik
             Email icons made by iconixar
@@ -101,20 +103,19 @@
       </div>
 
       <!-- TODO: About Me -->
-      <div class="section yes0" id = "about">
+      <div class="section yes00" id = "about">
         <div class = "row">
           <div class = "col s12">
-            <h3 class = "fullname" style = "padding-top: 10%"><strong>About Me</strong></h3>
-            <div class="card yes1 horizontal">
-              <div class="card-image">
-                <img src="testing4.gif" alt = "">
+            <h3 class = "fullname"><strong>About Me</strong></h3>
+            <div class="card hoverable yes01 horizontal">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img src="testing4.gif" alt = "Picture of Sandy">
               </div>
               <div class="card-stacked">
                 <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:100%;">
-                  <span class="card-title">Card Title</span>
-                  <p>I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at contain. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. </p>
-                  <p>I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at contain. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. </p>
-                  <p>I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at contain. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. </p>
+                  <span class="card-title">Hi! My name is Sandy.</span>
+                  <p>My first encounters with coding started in 2010 when I wanted to personalize my posts in online forums using HTML and CSS. This was also when I first started dabbling in digital design, as I wanted to embellish the post with custom embedded pictures.</p></br>
+                  <p>Needless to say, now I have extensive experience in both programming and design. I graduated with a Bachelors' in Computer Science and I've curated many graphics for various events and organizations. </p>
                 </div>
               </div>
             </div>
@@ -123,198 +124,125 @@
       </div>
 
       <!-- TODO: Featured Projects -->
-      <div class="section yes2" id = "projects">
-          <div class = "row">
-            <div class="col s12">
-              <h3 class = "fullname" style = "padding-top: 10%"><strong>Featured Projects</strong></h3>
+      <div class="section yes10" id = "projects">
+        <div class = "row">
+          <div class="col s12">
+            <h3 class = "fullname" style = "padding-top: 10%"><strong>Featured Projects</strong></h3>
+          </div>
+
+          <div class="col s12">
+            <div class="card horizontal hoverable yes11">
+              <div class="card-stacked">
+                <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
+                  <span class="card-title grey-text text-darken-4">Terminalgram</span>
+                  <p><i>Made with: Hadoop DFS, PostgreSQL, Java</i></p><br>
+                  <p>The project is an Instagram like application with a terminal-style menu to navigate the app. The system allows users to add a post, follow other users, view other posts from people they follow and view a news feed of the top photos based on the people they follow. Searches can be made to view users based on their username and tags. Users can also search photos based on tags and users. There is also an option to list the most popular photos and users in the application. </p>
+                </div>
+                <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
+                  <a href="https://github.com/hazewin/F20-CS179G">GitHub</a>
+                </div>
+              </div>
+              <div class="card-image waves-effect waves-block waves-light"><img src="img/featdesigns/terminalgram.gif" alt = "Terminalgram demo gif"></div>
             </div>
 
-            <div class="col s12">
-              <div class="card horizontal sticky-action">
-                <div class="card-stacked">
-                  <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
-                    <span class="card-title grey-text text-darken-4">Terminalgram</span>
-                    <p><i>Made with: Hadoop DFS, PostgreSQL, Java</i></p><br>
-                    <p>An Instagram like application with a terminal-style menu to navigate the app. The system allows users to add a post, follow other users, view other posts from people they follow and view a news feed of the top photos based on the people they follow. Searches can be made to view users based on their username and tags. Users can also search photos based on tags and users. There is also an option to list the most popular photos and users in the application. </p>
-                  </div>
-                  <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
-                    <a href="https://github.com/hazewin/F20-CS179G">GitHub</a>
-                  </div>
+            <div class="card horizontal hoverable yes12">
+              <div class="card-image waves-effect waves-block waves-light"><img src="img/featdesigns/petsimulator.gif" alt = "Pet Simulator demo gif"></div>
+              <div class="card-stacked">
+                <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
+                  <span class="card-title grey-text text-darken-4">Pet Simulator</span>
+                  <p><i>Made with: Arduino UNO R3, C for ATmega1284</i></p><br>
+                  <p>Pet Simulator is an interactive game where the main goal is to take care of your pet, taking inspirations from Bandai's Tamagotchi of the late 1990s. In this game, players can feed, play, and wash your virtual friend in order to maintain its health bar. ________, there is also an option to kick the pet in order to decrease the health bar. </p>
                 </div>
-                <div class="card-image">
-                  <img src="img/featdesigns/terminalgram.gif" alt = "">
-                </div>
-              </div>
-              <div class="card horizontal">
-                <div class="card-image">
-                  <img src="img/featdesigns/petsimulator.gif" alt = "">
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
-                    <span class="card-title grey-text text-darken-4">Pet Simulator</span>
-                    <p><i>Made with: Arduino UNO R3, C for ATmega1284</i></p><br>
-                    <p>Pet Simulator is an interactive game where the main goal is to take care of your pet, taking inspirations from Bandai's Tamagotchi of the late 1990s. In this game, players can feed, play, and wash your virtual friend in order to maintain its health bar. ________, there is also an option to kick the pet in order to decrease the health bar. </p>
-                  </div>
-                  <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
-                    <a href="https://www.youtube.com/watch?v=RSMGsYVGWGM">Demo Video</a>
-                  </div>
-                </div>
-              </div>
-              <div class="card horizontal">
-                <div class="card-stacked">
-                  <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
-                    <span class="card-title grey-text text-darken-4">guideme</span>
-                    <p><i>Made with: Google App Engine, HTML, CSS, JavaScript, Python, Yelp API </i></p><br>
-                    <p> This project was made during. </p>
-                    <p> guideme is a collaboration with two others to create a web app which planned a full three-day trip for travelers. </p>
-                  </div>
-                  <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
-                    <a href="https://github.com/geocas38/csgangstas">GitHub</a>
-                  </div>
-                </div>
-                <div class="card-image">
-                  <img src="img/featdesigns/guideme.gif" alt = "">
+                <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
+                  <a href="https://www.youtube.com/watch?v=RSMGsYVGWGM">Demo Video</a>
                 </div>
               </div>
             </div>
+
+            <div class="card horizontal hoverable yes13">
+              <div class="card-stacked">
+                <div class="card-content" style = "padding:26px;position:absolute;width:100%;overflow-y:auto;height:83%;">
+                  <span class="card-title grey-text text-darken-4">guideme</span>
+                  <p><i>Made with: Google App Engine, HTML, CSS, JavaScript, Python, Yelp API </i></p><br>
+                  <p> guideme is a a web application which planned a full three-day trip for travelers. This app presents you with the most comprehensive list available for the cities the user wishes to travel to. It pulls the best matched places and restaurants from the Yelp API and displays them in an easy to read format that can later be accessed by the user.</p>
+                </div>
+                <div class="card-action" style = "position: relative;top: 100%;transform: translateY(-100%);z-index:3; background-color:#fafafa;">
+                  <a href="https://github.com/geocas38/csgangstas">GitHub</a>
+                </div>
+              </div>
+              <div class="card-image waves-effect waves-block waves-light"><img src="img/featdesigns/guideme.gif" alt = "guideme demo gif"></div>
+            </div>
           </div>
+
+        </div>
       </div>
 
       <!-- Featured Designs -->
-      <div class="section yes2" id = "designs">
+      <div class="section yes20" id = "designs">
         <div class="row">
           <div class="col s12">
             <h3 class = "fullname" style = "padding-top: 10%"><strong>Featured Designs</strong></h3>
           </div>
 
           <div class="col s12 m6 l4">
-            <div class="card hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator materialboxed" src="img/featdesigns/CitrusHack2020.png">
+            <div class="card hoverable yes21">
+              <div class="card-image">
+                <img class="materialboxed" src="img/featdesigns/CitrusHack2020.png" alt="Citrus Hack 2020">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Citrus Hack 2020<i class="material-icons right">more_vert</i></span>
+                <span class="card-title grey-text text-darken-4">Citrus Hack 2020</span>
                 <p><a href="https://drive.google.com/drive/folders/1MLE99hlZQMgzK7RRUEI76kPYO377-otN?usp=sharing/">This is a link</a></p>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Citrus Hack 2020<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on. </p>
-              </div>
             </div>
           </div>
 
           <div class="col s12 m6 l4">
-            <div class="card hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator materialboxed" src="img/featdesigns/Webtech.png">
+            <div class="card hoverable yes23">
+              <div class="card-image">
+                <img class="materialboxed" src="img/featdesigns/CutieHack2019.png" alt="Cutie Hack 2019">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">CKI Technology Committee<i class="material-icons right">more_vert</i></span>
-                <p><a href="https://drive.google.com/drive/folders/181c2K8P7-vG8zOj0qx4KyQavwGczGZK7?usp=sharing/">This is a link</a></p>
-              </div>
-              <div class="card-reveal ">
-                <span class="card-title grey-text text-darken-4">CKI Technology Committee<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator materialboxed" src="img/featdesigns/ClubWebsiteManual.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">CKI Website Manual<i class="material-icons right">more_vert</i></span>
-                <p><a href="https://issuu.com/cnhcirclek/docs/techresourcemanual">This is a link</a></p>
-              </div>
-              <div class="card-reveal ">
-                <span class="card-title grey-text text-darken-4">CKI Website Manual<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator materialboxed" src="img/featdesigns/CutieHack2019.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Cutie Hack 2019<i class="material-icons right">more_vert</i></span>
+                <span class="card-title grey-text text-darken-4">Cutie Hack 2019</span>
                 <p><a href="https://drive.google.com/drive/folders/1XtaRaAIzBSCuzvJMVKFSKKoyPxI2xnsC?usp=sharing/">This is a link</a></p>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Cutie Hack 2019<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on. </p>
-              </div>
             </div>
           </div>
 
           <div class="col s12 m6 l4">
             <div class="card hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator materialboxed" src="img/featdesigns/CitrusHack2019.png">
+              <div class="card-image yes24">
+                <img class="materialboxed" src="img/featdesigns/CitrusHack2019.png" alt="Citrus Hack 2019">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Citrus Hack 2019<i class="material-icons right">more_vert</i></span>
+                <span class="card-title grey-text text-darken-4">Citrus Hack 2019</span>
                 <p><a href="https://drive.google.com/drive/folders/1tBcRXLaFgoiNx_FB1y_8L7gbBTnDTUHF?usp=sharing">This is a link</a></p>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Citrus Hack 2019<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on. </p>
-              </div>
             </div>
           </div>
 
           <div class="col s12 m6 l4">
-            <div class="card hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator materialboxed" src="img/featdesigns/CutieHack2018.png">
+            <div class="card hoverable yes25">
+              <div class="card-image">
+                <img class="materialboxed" src="img/featdesigns/CutieHack2018.png" alt="Cutie Hack 2018">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Cutie Hack 2018<i class="material-icons right">more_vert</i></span>
+                <span class="card-title grey-text text-darken-4">Cutie Hack 2018</span>
                 <p><a href="https://drive.google.com/drive/folders/1BQVUdRjYPfBjGxIhGDvRtBDohEoFjz4r?usp=sharing">This is a link</a></p>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Cutie Hack 2018<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on. </p>
-              </div>
             </div>
           </div>
 
           <div class="col s12 m6 l4">
-            <div class="card hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator materialboxed" src="img/featdesigns/CKIWebsite.png">
+            <div class="card hoverable yes26">
+              <div class="card-image">
+                <img class="materialboxed" src="img/featdesigns/FTCLogo.gif" alt="FTC Logo">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Website for CKI@UCR<i class="material-icons right">more_vert</i></span>
-                <p><a href="http://resources.cnhcirclek.org/Documents/Tech/Screenshots.pdf">This is a link</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Website for CKI@UCR<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on. Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator materialboxed" src="img/featdesigns/FTCLogo.gif">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Fall Training Conference 2017<i class="material-icons right">more_vert</i></span>
+                <span class="card-title grey-text text-darken-4">Fall Training Conference 2017</span>
                 <p><a href="https://drive.google.com/drive/folders/1V6-hiW7l1h16BDhEBoDgYACbTf62fCeT?usp=sharing">This is a link</a></p>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Fall Training Conference 2017<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on. </p>
-              </div>
             </div>
           </div>
-
         </div>
       </div>
 

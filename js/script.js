@@ -34,17 +34,24 @@ function lightMode(){
 }
 
 ScrollReveal().reveal('.typing_div')
-ScrollReveal().reveal('.full_name', { delay: 1000 })
-ScrollReveal().reveal('.splash_about_box', { delay: 1500 })
+ScrollReveal().reveal('.full_name', { delay: 500 })
+ScrollReveal().reveal('.splash_about_box', { delay: 1000 })
 
-ScrollReveal().reveal('.reveal', { delay: 300 })
-ScrollReveal().reveal('.yes1', { delay: 300 })
-ScrollReveal().reveal('.yes2', { delay: 300 })
-ScrollReveal().reveal('.yes3', { delay: 300 })
-ScrollReveal().reveal('.yes', { delay: 300 })
-ScrollReveal().reveal('.yes1', { delay: 300 })
-ScrollReveal().reveal('.yes2', { delay: 300 })
-ScrollReveal().reveal('.yes3', { delay: 300 })
+ScrollReveal().reveal('.yes00', { delay: 80 })
+ScrollReveal().reveal('.yes01', { delay: 80 })
+
+ScrollReveal().reveal('.yes10', { delay: 80 })
+ScrollReveal().reveal('.yes11', { delay: 80 })
+ScrollReveal().reveal('.yes12', { delay: 80 })
+ScrollReveal().reveal('.yes13', { delay: 80 })
+
+ScrollReveal().reveal('.yes20', { delay: 80 })
+ScrollReveal().reveal('.yes21', { delay: 80 })
+ScrollReveal().reveal('.yes22', { delay: 80 })
+ScrollReveal().reveal('.yes23', { delay: 80 })
+ScrollReveal().reveal('.yes24', { delay: 80 })
+ScrollReveal().reveal('.yes25', { delay: 80 })
+ScrollReveal().reveal('.yes26', { delay: 80 })
 
 // enable the mobile side navigation
 $(document).ready(function(){
