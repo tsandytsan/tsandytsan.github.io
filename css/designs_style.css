@@ -55,6 +55,18 @@ a:hover{
   color: #90c7ad;
 }
 
+/* @media only screen and (max-width : 992px) {
+  .parallax img {
+    max-height: 130%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .parallax img {
+    max-height: 350%;
+  }
+} */
+
 @media screen and (max-width: 1500px) {
   .body_box {
     width:50%; /* The width is 100%, when the viewport is 800px or smaller */
