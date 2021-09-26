@@ -1,25 +1,13 @@
-// let mode_toggle = document.querySelector("#ui")
-//
-// mode_toggle.addEventListener("click",()=>{
-//   if (document.body.classList.contains("dark")){
-//     lightMode()
-//   } else {
-//     darkMode()
-//   }
-// })
-//
-// function darkMode(){
-//   document.body.classList.add("dark")
-//   var sunmoon = document.querySelector("#ui")
-//   sunmoon.setAttribute("src","sun.svg")
-// }
-//
-// function lightMode(){
-//   document.body.classList.remove("dark")
-//   var sunmoon = document.querySelector("#ui")
-//   sunmoon.setAttribute("src","moon.svg")
-// }
-//
+// Select the button
+const btn = document.querySelector("#ui");
+// Select the theme preference from localStorage
+const currentTheme = localStorage.getItem("theme");
+
+// If the current theme in localStorage is "dark"...
+if (currentTheme == "dark") {
+  // ...then use the .dark-theme class
+    document.body.classList.add("dark")
+}
 
 // enable the parallax
 $(document).ready(function(){
@@ -31,14 +19,12 @@ $(document).ready(function(){
   $('.sidenav').sidenav();
 });
 
-//
-// document.addEventListener('DOMContentLoaded', function() {
-//   var elems = document.querySelectorAll('.materialboxed');
-//   var instances = M.Materialbox.init(elems, options);
+ScrollReveal().reveal('.d1', { delay: 80 })
+ScrollReveal().reveal('.d2', { delay: 80 })
+ScrollReveal().reveal('.d3', { delay: 80 })
+ScrollReveal().reveal('.d4', { delay: 80 })
+
+//enable icon zoom
+// $(document).ready(function(){
+//   $('.materialboxed').materialbox();
 // });
-
-// Or with jQuery
-
-$(document).ready(function(){
-  $('.materialboxed').materialbox();
-});
