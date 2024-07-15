@@ -9,6 +9,11 @@ body {
   color: #fafafa;
 }
 
+.navdarkCSS {
+  background-color: #0e121b;
+  color: #fafafa;
+}
+
 body.dark .icon_list img {
   filter: contrast(0);
 }
@@ -30,12 +35,13 @@ body.dark .icon_list img {
 
 .splash_about_body {
   /* vertical border */
-  border-left: 1px solid #424242;;
+  border-left: 1px solid #424242;
 }
 
 
 .footer_body {
   text-align: center;
+  padding-bottom: 3%;
 }
 
 .card {
